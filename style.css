@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Base*/
+h1,h2,h3,h4,p,body{
+  color: #F4EDDE;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+}
+h4{
+  color: #F4EDDE;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+body {
+	background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+}
+/* Présentation de la filière (Texte + Vidéo)*/
+#presentation-text{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+/*Display sur 2 colonnes*/
+.split-screen {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.split-screen__half {
+  flex: 1;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+/* Vidéo présentation */
+#video{
+  width: 700px;
+  height: 400px;
+  border-radius: 2%;
+  margin: 14%;
+  margin-top: 3%;
+  border-color: #F4EDDE;
+}
+
+/*Tableau*/
+table{
+  margin: auto;
+  border-collapse: collapse;
+  border-color: #F4EDDE;
+  color: #F4EDDE;
+}
+
+th, td{
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid #F4EDDE;
+  padding: 15px;
+  text-align: center;
+}
+th{
+  font-size: 20px;
+}
+/*Spécialitées*/
+#spe-title{
+  text-align: center;
+  font-size: 25px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 150px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.card h2 {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #535564;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  text-align: center;
+  display: flex;
+  font-size: 12px;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: #1f2029;
+  transition: 0.8s ease;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+
+/* Section débouché/Supérieur */
+li{
+  color: #F4EDDE;
+  list-style: square;
+}
+.post-bac{
+  text-align: center;
+  justify-content: center;
+}
+#Formation{
+  font-size: 17.5px;
+}
